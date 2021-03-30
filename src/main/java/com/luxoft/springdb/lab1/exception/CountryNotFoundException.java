@@ -1,4 +1,4 @@
-package com.luxoft.springdb.lab1.dao;
+package com.luxoft.springdb.lab1.exception;
 
 public class CountryNotFoundException extends Exception {
 
