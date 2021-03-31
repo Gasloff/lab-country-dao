@@ -1,0 +1,26 @@
+###
+
+GET localhost:8080/api/all
+
+###
+
+GET localhost:8080/api/find/id?id=7
+
+###
+
+POST localhost:8080/api/save
+Content-Type: application/json
+
+{
+  "id": 12,
+  "name": "Germany",
+  "codeName": "DE"
+}
+
+###
+
+PUT localhost:8080/api/update/id?id=7&name=Russia
+
+###
+
+DELETE localhost:8080/api/delete/id?id=1

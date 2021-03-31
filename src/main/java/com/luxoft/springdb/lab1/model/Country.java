@@ -1,11 +1,17 @@
 package com.luxoft.springdb.lab1.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.io.Serializable;
 
+@Entity
 public class Country implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
+	@Id
+    @GeneratedValue
 	private int id;
 
     private String name;
@@ -17,11 +23,6 @@ public class Country implements Serializable{
 
     public Country(int id, String name, String codeName) {
         this.id = id;
-        this.name = name;
-        this.codeName = codeName;
-    }
-
-    public Country(String name, String codeName) {
         this.name = name;
         this.codeName = codeName;
     }
